@@ -33,7 +33,7 @@ export default {
       posts: [
          {
             data: '02 de jul, 2021',
-            titulo: 'Agora é oficial: o Winodows 11 está vindo',
+            titulo: 'Agora é oficial: o Windows 11 está vindo',
             conteudo: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.'
          },
          {
@@ -89,6 +89,22 @@ export default {
    margin: 0;
 
    font-family: 'Lexend Deca', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E4E6E8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue-dark);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4336D4;
 }
 
 .container{
@@ -174,7 +190,7 @@ export default {
 main{
    background: #F3F5F7;
 
-   padding-top: 16px;
+   padding-top: 1%;
    padding-bottom: 48px;
 
    min-height: 385px;
@@ -193,7 +209,7 @@ footer{
 
    a{
       text-decoration: none;
-      color: #6255E9;
+      color: var(--blue-dark);
 
       &:hover{
          text-decoration: underline;
