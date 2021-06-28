@@ -2,6 +2,8 @@
 node_modules
 /dist
 
+now.json
+
 
 # local env files
 .env.local
