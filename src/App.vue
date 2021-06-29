@@ -7,6 +7,7 @@
          <div id="busca">
             <img src="./assets/search.svg" alt="Lupa">
             <input type="text" placeholder="Pesquisar no blog" v-model="search">
+            <img v-if="search" src="./assets/clear.svg" alt="Lupa" @click="search = '' ">
          </div>
       </div>
    </header>
@@ -154,6 +155,20 @@ export default {
       justify-content: space-between;
 
       padding: 0 16px;
+
+      img:first-child{
+         margin-left: 1%;
+         margin-right: 16px;
+      }
+
+      img:last-child{
+         margin-left: 16px;
+         margin-right: 1%;
+
+         padding: 4px;
+
+         cursor: pointer;
+      }
    }
 
    input{
